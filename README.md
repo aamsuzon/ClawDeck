@@ -17,12 +17,6 @@
   <img src="https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=nextdotjs" alt="Next.js 16" />
 </p>
 
-## Official PicoClaw (Viral Preview)
-
-<p align="center">
-  <img src="https://opengraph.githubassets.com/1/sipeed/picoclaw" alt="Official PicoClaw Preview" width="100%" />
-</p>
-
 ## Why ClawDeck
 
 PicoClaw is powerful, but many users struggle with terminal-first workflow.  
@@ -37,11 +31,10 @@ ClawDeck turns PicoClaw into a visual control center so non-programmer users can
 - Configure AI model API keys with guided profile form
 - See release update alerts in-app
 
-## PicoClaw Windows Download (Official)
+## PicoClaw Download (Official)
 
-- PicoClaw Releases: https://github.com/sipeed/picoclaw/releases
-- Direct latest Windows x64 EXE:  
-  https://github.com/sipeed/picoclaw/releases/latest/download/picoclaw-windows-amd64.exe
+- Official site: https://picoclaw.io/
+- Download PicoClaw (Windows) from the official website.
 
 ## Quick Start (5 Minutes)
 
@@ -181,4 +174,3 @@ Built by **Abdullah Al Mahamud**
 - LinkedIn: https://www.linkedin.com/in/aamsuzon/
 
 If this project helps you, please star the repo and follow for updates.
-
