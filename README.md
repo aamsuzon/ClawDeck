@@ -6,26 +6,75 @@
 
 <p align="center">
   <strong>Mission Control UI for PicoClaw</strong><br />
-  Local-first, Windows-first, safe controls, no terminal required.
+  Local-first. Windows-first. No terminal required.
 </p>
 
 <p align="center">
   <a href="https://github.com/aamsuzon/ClawDeck/stargazers"><img src="https://img.shields.io/github/stars/aamsuzon/ClawDeck?style=for-the-badge" alt="GitHub stars" /></a>
   <a href="https://github.com/aamsuzon/ClawDeck/releases"><img src="https://img.shields.io/github/v/release/aamsuzon/ClawDeck?style=for-the-badge" alt="Latest release" /></a>
+  <img src="https://img.shields.io/badge/Windows-First-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows first" />
+  <img src="https://img.shields.io/badge/No-CLI%20Required-0F2F35?style=for-the-badge" alt="No CLI required" />
   <img src="https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=nextdotjs" alt="Next.js 16" />
-  <img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript 5" />
+</p>
+
+## Official PicoClaw (Viral Preview)
+
+<p align="center">
+  <img src="https://opengraph.githubassets.com/1/sipeed/picoclaw" alt="Official PicoClaw Preview" width="100%" />
 </p>
 
 ## Why ClawDeck
 
-PicoClaw is powerful, but many users do not want to run everything from terminal commands.
+PicoClaw is powerful, but many users struggle with terminal-first workflow.  
+ClawDeck turns PicoClaw into a visual control center so non-programmer users can run daily operations safely.
 
-ClawDeck gives you a visual control center:
-- Live gateway health and workspace status
-- Mission timeline for sessions, tool calls, and cron activity
-- No-CLI actions (send agent messages, restart gateway, manage cron)
-- Safe Config Studio with secret masking and approval flow
-- Version update notifications from GitHub releases
+### What users can do easily
+- Check gateway and workspace health
+- Browse session history and timeline
+- Send agent messages without terminal
+- Create/manage cron jobs from UI
+- Configure messaging bot tokens with form fields
+- Configure AI model API keys with guided profile form
+- See release update alerts in-app
+
+## PicoClaw Windows Download (Official)
+
+- PicoClaw Releases: https://github.com/sipeed/picoclaw/releases
+- Direct latest Windows x64 EXE:  
+  https://github.com/sipeed/picoclaw/releases/latest/download/picoclaw-windows-amd64.exe
+
+## Quick Start (5 Minutes)
+
+### 1) Install PicoClaw
+
+Download and install PicoClaw (Windows) from the official release links above.
+
+### 2) Install ClawDeck
+
+```powershell
+cd C:\Projects
+git clone https://github.com/aamsuzon/ClawDeck.git
+cd ClawDeck
+npm install
+```
+
+### 3) Run ClawDeck
+
+```powershell
+npm run dev
+```
+
+Open: `http://localhost:3000`
+
+## First Use Flow (Non-CLI Friendly)
+
+1. Open ClawDeck and click `Refresh`.
+2. Confirm top badges: `Gateway Online` and `Workspace Ready`.
+3. Go to `Configuration Center`:
+   - Messaging Bot Configuration: select channel, set token, save.
+   - AI API Key Configuration: create/select model profile, set API key, save.
+4. Go to `Action Console` and run a test agent message.
+5. Add cron jobs from UI if needed.
 
 ## Product Visuals
 
@@ -38,153 +87,98 @@ ClawDeck gives you a visual control center:
 </p>
 
 <p align="center">
-  <img src="./public/readme/update-center.svg" alt="Version Update Notice UI" width="100%" />
+  <img src="./public/readme/update-center.svg" alt="Update Center UI" width="100%" />
 </p>
 
-## Feature Highlights
+## Feature Breakdown
 
-### 1) Mission Timeline
-- Paginated timeline for large conversations
-- Long message "Load more / Show less"
-- Tool-call payload inspection
+### Mission Timeline
+- Pagination for long histories
+- Load more/show less for large messages
+- Tool-call inspection in expandable block
 
-### 2) Action Console
-- Send message to agent from UI
-- Restart gateway from UI (high-risk confirmation)
-- Create/enable/disable/remove cron jobs
+### Action Console
+- Send agent message
+- Restart gateway (high-risk confirmation)
+- Create, enable, disable, remove cron jobs
 
-### 3) Config Studio (No JSON Editing Required)
-- Messaging channel list with enabled/token status
-- Token field selector for different bot types (`token`, `bot_token`, `app_token`, etc.)
-- AI model profile create/update (provider + model id + API base + API key)
-- Masked secret display for safe local operations
+### Config Studio (Form-Based)
+- Bot/channel list with token status visibility
+- Token field selector for different channel schemas
+- AI model profile create/update flow
+- Masked secrets for safer local operation
 
-### 4) Update Awareness
-- Shows current app version in header
-- Checks latest release from GitHub API
-- In-app "new update available" notice
+### Update Awareness
+- Shows current version in UI header
+- Checks latest GitHub release
+- Prompts user when update is available
 
-## Quick Start (Windows)
+## API Surface
 
-### Prerequisites
-1. Node.js `20+`
-2. PicoClaw installed (`C:\picoclaw\picoclaw.exe`)
-3. PicoClaw config and workspace in:
-   - `C:\Users\<your-user>\.picoclaw\config.json`
-   - `C:\Users\<your-user>\.picoclaw\workspace`
+| Method | Endpoint | Purpose |
+|---|---|---|
+| GET | `/api/bridge/health` | Gateway and workspace status |
+| GET | `/api/bridge/sessions` | Session list |
+| GET | `/api/bridge/sessions/:id` | Session detail |
+| GET | `/api/bridge/cron` | Cron list |
+| POST | `/api/bridge/cron` | Create cron |
+| PATCH | `/api/bridge/cron/:id` | Enable/disable/remove cron |
+| POST | `/api/bridge/agent/message` | Send agent message |
+| GET | `/api/bridge/config/safe` | Redacted config |
+| GET | `/api/bridge/config/ui` | Structured config for UI |
+| PUT | `/api/bridge/config/ui/messaging` | Update messaging config |
+| PUT | `/api/bridge/config/ui/model` | Update/create model profile |
+| POST | `/api/bridge/gateway` | Gateway control |
+| GET | `/api/meta/version` | Current vs latest release |
 
-### Install
-
-```powershell
-cd C:\Projects
-git clone https://github.com/aamsuzon/ClawDeck.git
-cd ClawDeck
-npm install
-```
-
-### Run
-
-```powershell
-npm run dev
-```
-
-Open: `http://localhost:3000`
-
-### Production Build
+## Production Run
 
 ```powershell
 npm run build
 npm run start
 ```
 
-## First-Time Setup Flow
+## Environment (Optional)
 
-1. Start PicoClaw gateway.
-2. Open ClawDeck and click `Refresh`.
-3. Confirm `Gateway Online` and `Workspace Ready`.
-4. Go to `Configuration Center`:
-   - Set messaging token/channel config
-   - Set AI model API key config
-5. Test using `Action Console -> Run Agent`.
-6. Add cron jobs from the UI if needed.
-
-## API Surface (Bridge + UI Meta)
-
-| Method | Endpoint | Purpose |
-|---|---|---|
-| GET | `/api/bridge/health` | Gateway and workspace status |
-| GET | `/api/bridge/sessions` | Session list |
-| GET | `/api/bridge/sessions/:id` | Session detail + messages |
-| GET | `/api/bridge/cron` | Cron job list |
-| POST | `/api/bridge/cron` | Create cron job |
-| PATCH | `/api/bridge/cron/:id` | Enable/disable/remove cron job |
-| POST | `/api/bridge/agent/message` | Send agent message |
-| GET | `/api/bridge/config/safe` | Redacted raw config |
-| GET | `/api/bridge/config/ui` | Structured config data for UI |
-| PUT | `/api/bridge/config/ui/messaging` | Update messaging config |
-| PUT | `/api/bridge/config/ui/model` | Update/create model profile |
-| POST | `/api/bridge/gateway` | Gateway control actions |
-| GET | `/api/meta/version` | Current vs latest GitHub release |
-
-## Security Model
-
-- Localhost-focused bridge routes
-- Redacted secrets in safe config responses
-- No raw arbitrary shell execution from UI
-- Risk-classified operations with explicit confirmation (`force: true`)
-
-## Update Notification Setup
-
-By default, update check targets:
-- `aamsuzon/clawdeck`
-
-To change repository source:
+To point update-checker to another repo:
 
 ```powershell
-# temporary (current shell)
+# temporary
 $env:CLAWDECK_GITHUB_REPO="owner/repo"
 
-# permanent (new shells)
+# permanent
 setx CLAWDECK_GITHUB_REPO "owner/repo"
 ```
 
 ## Troubleshooting
 
-### Gateway shows offline
-- Confirm PicoClaw is running.
-- Check `config.json` gateway host/port.
+### Gateway offline
+- Ensure PicoClaw process is running.
+- Check gateway host/port in PicoClaw config.
 - Click `Refresh`.
 
-### Messaging token shows not set
-- Select the correct channel in Config Studio.
-- Select the correct token field.
-- Save config with confirmation.
+### Token not set
+- Select correct channel.
+- Select correct token field.
+- Save config again.
 
-### Cannot push to GitHub
-- Use HTTPS remote and GitHub login prompt, or configure SSH key.
+### Git push/auth issues
+- Use HTTPS login or configure SSH keys.
 
-## Roadmap (Public)
+## Public Roadmap
 
-- Better onboarding wizard for non-technical users
-- Deeper channel diagnostics
-- Enhanced timeline filters and search
-- Contributor-friendly plugin extensions
-
-## Contributing
-
-Issues and pull requests are welcome.
-
-1. Fork repository
-2. Create feature branch
-3. Commit with clear message
-4. Open pull request
+- Better onboarding wizard for first-time users
+- Richer diagnostics for bot channels
+- More timeline search/filter controls
+- Contributor templates and plugin extension points
 
 ## Credit
 
-Built by **Aam Suzon**
+Built by **Abdullah Al Mahamud**
 
 - Facebook: https://facebook.com/aamsuzon
 - GitHub: https://github.com/aamsuzon
 - LinkedIn: https://www.linkedin.com/in/aamsuzon/
 
-If this project helps you, please star the repository and follow for updates.
+If this project helps you, please star the repo and follow for updates.
+
