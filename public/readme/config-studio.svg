@@ -1,0 +1,61 @@
+<svg width="1600" height="940" viewBox="0 0 1600 940" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1600" y2="940" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6EEDC"/>
+      <stop offset="1" stop-color="#E1F0EC"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="940" rx="24" fill="url(#bg3)"/>
+  <rect x="70" y="70" width="1460" height="800" rx="24" fill="#F8F1E4" stroke="#CDBA9D"/>
+
+  <text x="110" y="130" fill="#8A3F2E" font-family="Segoe UI, Arial, sans-serif" font-size="26" letter-spacing="3">CONFIG STUDIO</text>
+  <text x="110" y="166" fill="#294E56" font-family="Segoe UI, Arial, sans-serif" font-size="20">No JSON editing required for non-technical users.</text>
+
+  <rect x="110" y="200" width="670" height="620" rx="18" fill="#FFFFFF" stroke="#D5C6AE"/>
+  <text x="140" y="245" fill="#1D434A" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Messaging Bot Configuration</text>
+
+  <rect x="140" y="270" width="610" height="120" rx="14" fill="#F8F1E2" stroke="#D9C9AF"/>
+  <text x="166" y="306" fill="#2B5259" font-family="Segoe UI, Arial, sans-serif" font-size="18">Channels: Telegram (Enabled), Discord (Disabled), Slack (Disabled)</text>
+  <text x="166" y="336" fill="#4E6A70" font-family="Segoe UI, Arial, sans-serif" font-size="17">Token status and bot availability shown in one list.</text>
+
+  <rect x="140" y="410" width="290" height="60" rx="12" fill="#FFFFFF" stroke="#D9C9AF"/>
+  <text x="164" y="446" fill="#2C545B" font-family="Segoe UI, Arial, sans-serif" font-size="17">Token Field: token</text>
+
+  <rect x="460" y="410" width="290" height="60" rx="12" fill="#FFFFFF" stroke="#D9C9AF"/>
+  <text x="484" y="446" fill="#2C545B" font-family="Segoe UI, Arial, sans-serif" font-size="17">Current Mask: 875***********f4</text>
+
+  <rect x="140" y="490" width="610" height="60" rx="12" fill="#FFFFFF" stroke="#D9C9AF"/>
+  <text x="164" y="526" fill="#2C545B" font-family="Segoe UI, Arial, sans-serif" font-size="17">New token input (leave blank to keep existing)</text>
+
+  <rect x="140" y="570" width="610" height="60" rx="12" fill="#FFFFFF" stroke="#D9C9AF"/>
+  <text x="164" y="606" fill="#2C545B" font-family="Segoe UI, Arial, sans-serif" font-size="17">Allow From IDs (comma separated)</text>
+
+  <rect x="140" y="664" width="270" height="54" rx="27" fill="#10343B"/>
+  <text x="184" y="698" fill="#F4E7CC" font-family="Segoe UI, Arial, sans-serif" font-size="18">Save Messaging</text>
+
+  <rect x="820" y="200" width="670" height="620" rx="18" fill="#FFFFFF" stroke="#D5C6AE"/>
+  <text x="850" y="245" fill="#1D434A" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">AI Model Configuration</text>
+
+  <rect x="850" y="270" width="610" height="120" rx="14" fill="#F8F1E2" stroke="#D9C9AF"/>
+  <text x="876" y="306" fill="#2B5259" font-family="Segoe UI, Arial, sans-serif" font-size="18">Profile: claude-opus</text>
+  <text x="876" y="336" fill="#4E6A70" font-family="Segoe UI, Arial, sans-serif" font-size="17">Provider + model id + API base + key in guided form.</text>
+
+  <rect x="850" y="410" width="290" height="60" rx="12" fill="#FFFFFF" stroke="#D9C9AF"/>
+  <text x="874" y="446" fill="#2C545B" font-family="Segoe UI, Arial, sans-serif" font-size="17">Provider: anthropic</text>
+
+  <rect x="1170" y="410" width="290" height="60" rx="12" fill="#FFFFFF" stroke="#D9C9AF"/>
+  <text x="1194" y="446" fill="#2C545B" font-family="Segoe UI, Arial, sans-serif" font-size="17">Model ID: claude-opus-4.1</text>
+
+  <rect x="850" y="490" width="610" height="60" rx="12" fill="#FFFFFF" stroke="#D9C9AF"/>
+  <text x="874" y="526" fill="#2C545B" font-family="Segoe UI, Arial, sans-serif" font-size="17">API Base: https://api.anthropic.com/v1</text>
+
+  <rect x="850" y="570" width="610" height="60" rx="12" fill="#FFFFFF" stroke="#D9C9AF"/>
+  <text x="874" y="526" fill="#2C545B" font-family="Segoe UI, Arial, sans-serif" font-size="17" opacity="0">placeholder</text>
+  <text x="874" y="606" fill="#2C545B" font-family="Segoe UI, Arial, sans-serif" font-size="17">API Key: sk-ant-***************************</text>
+
+  <rect x="850" y="664" width="306" height="54" rx="27" fill="#10343B"/>
+  <text x="892" y="698" fill="#F4E7CC" font-family="Segoe UI, Arial, sans-serif" font-size="18">Save Model Profile</text>
+
+  <text x="110" y="848" fill="#4B676E" font-family="Segoe UI, Arial, sans-serif" font-size="20">Structured forms reduce configuration mistakes and improve onboarding speed.</text>
+</svg>
+

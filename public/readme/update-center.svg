@@ -1,0 +1,36 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8F1EE"/>
+      <stop offset="1" stop-color="#F5E9D4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" rx="24" fill="url(#bg4)"/>
+
+  <rect x="100" y="80" width="1400" height="740" rx="24" fill="#F9F3E6" stroke="#CDBCA1"/>
+  <text x="146" y="140" fill="#8A3F2E" font-family="Segoe UI, Arial, sans-serif" font-size="25" letter-spacing="3">VERSION AWARENESS</text>
+  <text x="146" y="178" fill="#2B5058" font-family="Segoe UI, Arial, sans-serif" font-size="20">Users get a clear prompt when a new release is available.</text>
+
+  <rect x="146" y="220" width="1308" height="160" rx="18" fill="#FFE6B2" stroke="#D7A848"/>
+  <text x="188" y="275" fill="#6E4300" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">New update available: v0.2.0</text>
+  <text x="188" y="322" fill="#7A5111" font-family="Segoe UI, Arial, sans-serif" font-size="24">Current version: v0.1.0 • Please update for latest fixes and features.</text>
+  <rect x="1110" y="262" width="160" height="54" rx="27" fill="#0F2F35"/>
+  <text x="1146" y="297" fill="#F4E7CB" font-family="Segoe UI, Arial, sans-serif" font-size="18">Release</text>
+  <rect x="1286" y="262" width="120" height="54" rx="27" fill="#FFFFFF" stroke="#B38735"/>
+  <text x="1320" y="297" fill="#6E4300" font-family="Segoe UI, Arial, sans-serif" font-size="18">Dismiss</text>
+
+  <rect x="146" y="420" width="640" height="330" rx="18" fill="#FFFFFF" stroke="#D8C9B0"/>
+  <text x="182" y="470" fill="#1F4750" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Footer Identity</text>
+  <text x="182" y="512" fill="#43666D" font-family="Segoe UI, Arial, sans-serif" font-size="20">Credit to build: Aam Suzon</text>
+  <text x="182" y="546" fill="#43666D" font-family="Segoe UI, Arial, sans-serif" font-size="20">Facebook • GitHub • LinkedIn links</text>
+  <text x="182" y="580" fill="#43666D" font-family="Segoe UI, Arial, sans-serif" font-size="20">Follow repo for next updates</text>
+
+  <rect x="830" y="420" width="624" height="330" rx="18" fill="#FFFFFF" stroke="#D8C9B0"/>
+  <text x="866" y="470" fill="#1F4750" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Update Source</text>
+  <text x="866" y="512" fill="#43666D" font-family="Segoe UI, Arial, sans-serif" font-size="20">Endpoint: /api/meta/version</text>
+  <text x="866" y="546" fill="#43666D" font-family="Segoe UI, Arial, sans-serif" font-size="20">Compares package version vs latest GitHub release tag</text>
+  <text x="866" y="580" fill="#43666D" font-family="Segoe UI, Arial, sans-serif" font-size="20">Supports CLAWDECK_GITHUB_REPO override</text>
+
+  <text x="146" y="790" fill="#4C676E" font-family="Segoe UI, Arial, sans-serif" font-size="20">Professional update loop improves retention and makes release adoption easier.</text>
+</svg>
+

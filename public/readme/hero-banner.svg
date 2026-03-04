@@ -1,0 +1,55 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E2A30"/>
+      <stop offset="1" stop-color="#154B55"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#F6EBD6"/>
+      <stop offset="1" stop-color="#E9D6BA"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F27E4A"/>
+      <stop offset="1" stop-color="#FFD88A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" rx="28" fill="url(#bg)"/>
+  <circle cx="1400" cy="120" r="240" fill="#1A616D" opacity="0.4"/>
+  <circle cx="220" cy="760" r="260" fill="#1C7280" opacity="0.35"/>
+  <circle cx="980" cy="680" r="320" fill="#2A8A98" opacity="0.18"/>
+
+  <rect x="84" y="88" width="1432" height="724" rx="28" fill="#0F343B" stroke="#2E7885" stroke-opacity="0.5"/>
+
+  <text x="140" y="205" fill="#F7E8CC" font-family="Segoe UI, Arial, sans-serif" font-size="26" letter-spacing="6">PICOCLAW MISSION CONTROL UI</text>
+  <text x="140" y="292" fill="url(#accent)" font-family="Segoe UI, Arial, sans-serif" font-size="98" font-weight="700">ClawDeck</text>
+  <text x="140" y="360" fill="#D8E9E5" font-family="Segoe UI, Arial, sans-serif" font-size="34">Run PicoClaw without terminal complexity.</text>
+
+  <rect x="140" y="406" width="220" height="50" rx="25" fill="#174B53" stroke="#3EA4B1"/>
+  <text x="178" y="438" fill="#F4E5C8" font-family="Segoe UI, Arial, sans-serif" font-size="20">Local-First</text>
+
+  <rect x="376" y="406" width="220" height="50" rx="25" fill="#174B53" stroke="#3EA4B1"/>
+  <text x="422" y="438" fill="#F4E5C8" font-family="Segoe UI, Arial, sans-serif" font-size="20">No-CLI Ops</text>
+
+  <rect x="612" y="406" width="220" height="50" rx="25" fill="#174B53" stroke="#3EA4B1"/>
+  <text x="662" y="438" fill="#F4E5C8" font-family="Segoe UI, Arial, sans-serif" font-size="20">Safe Config</text>
+
+  <rect x="910" y="200" width="520" height="500" rx="24" fill="url(#card)" stroke="#D8C09B"/>
+  <rect x="950" y="246" width="440" height="62" rx="14" fill="#12373F"/>
+  <text x="976" y="285" fill="#F8E9CE" font-family="Consolas, monospace" font-size="22">Gateway Online   |   Version v0.1.0</text>
+
+  <rect x="950" y="336" width="440" height="90" rx="14" fill="#FFFFFF" stroke="#D8C6AA"/>
+  <text x="974" y="370" fill="#1C454C" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="600">Mission Timeline</text>
+  <text x="974" y="399" fill="#4A6870" font-family="Segoe UI, Arial, sans-serif" font-size="18">Sessions, tool calls, cron events in one view</text>
+
+  <rect x="950" y="444" width="440" height="90" rx="14" fill="#FFFFFF" stroke="#D8C6AA"/>
+  <text x="974" y="478" fill="#1C454C" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="600">Action Console</text>
+  <text x="974" y="507" fill="#4A6870" font-family="Segoe UI, Arial, sans-serif" font-size="18">Send agent messages, manage cron, restart gateway</text>
+
+  <rect x="950" y="552" width="440" height="90" rx="14" fill="#FFFFFF" stroke="#D8C6AA"/>
+  <text x="974" y="586" fill="#1C454C" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="600">Config Studio</text>
+  <text x="974" y="615" fill="#4A6870" font-family="Segoe UI, Arial, sans-serif" font-size="18">Messaging + model profiles with masked secrets</text>
+
+  <text x="140" y="760" fill="#9CC6CF" font-family="Segoe UI, Arial, sans-serif" font-size="24">Windows-first • PicoClaw bridge APIs • GitHub release update notice</text>
+</svg>
+

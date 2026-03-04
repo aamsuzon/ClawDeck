@@ -1,0 +1,46 @@
+<svg width="1600" height="920" viewBox="0 0 1600 920" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1600" y2="920" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5E9D2"/>
+      <stop offset="1" stop-color="#DCEDE8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="920" rx="24" fill="url(#bg2)"/>
+
+  <rect x="70" y="70" width="1460" height="780" rx="26" fill="#F8F0E2" stroke="#C8B79C"/>
+  <text x="110" y="130" fill="#8A3F2E" font-family="Segoe UI, Arial, sans-serif" font-size="26" letter-spacing="3">MISSION TIMELINE</text>
+
+  <rect x="110" y="170" width="380" height="620" rx="20" fill="#FDFBF7" stroke="#D4C3A8"/>
+  <text x="140" y="215" fill="#1B3D44" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Sessions</text>
+  <rect x="140" y="240" width="320" height="90" rx="14" fill="#0F2F35"/>
+  <text x="164" y="278" fill="#F5E8CF" font-family="Segoe UI, Arial, sans-serif" font-size="18">ui:1709530425</text>
+  <text x="164" y="305" fill="#CFE1DC" font-family="Segoe UI, Arial, sans-serif" font-size="16">24 messages</text>
+
+  <rect x="140" y="345" width="320" height="90" rx="14" fill="#FFFFFF" stroke="#D4C3A8"/>
+  <text x="164" y="382" fill="#2A555D" font-family="Segoe UI, Arial, sans-serif" font-size="18">cron:daily-standup</text>
+  <text x="164" y="410" fill="#5D7A80" font-family="Segoe UI, Arial, sans-serif" font-size="16">10 messages</text>
+
+  <rect x="520" y="170" width="970" height="620" rx="20" fill="#FDFBF7" stroke="#D4C3A8"/>
+  <text x="560" y="215" fill="#1B3D44" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Timeline Cards</text>
+
+  <rect x="560" y="248" width="890" height="118" rx="16" fill="#FFFFFF" stroke="#D7C9B1"/>
+  <rect x="560" y="248" width="8" height="118" rx="8" fill="#0F2F35"/>
+  <text x="588" y="285" fill="#1A444B" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700">assistant #17</text>
+  <text x="588" y="317" fill="#4D6A70" font-family="Segoe UI, Arial, sans-serif" font-size="17">Generated release checklist and deployment notes...</text>
+
+  <rect x="560" y="386" width="890" height="118" rx="16" fill="#FFFFFF" stroke="#D7C9B1"/>
+  <rect x="560" y="386" width="8" height="118" rx="8" fill="#A14A34"/>
+  <text x="588" y="423" fill="#1A444B" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700">user #18</text>
+  <text x="588" y="455" fill="#4D6A70" font-family="Segoe UI, Arial, sans-serif" font-size="17">Add pagination and improve message readability.</text>
+
+  <rect x="560" y="524" width="890" height="118" rx="16" fill="#FFFFFF" stroke="#D7C9B1"/>
+  <rect x="560" y="524" width="8" height="118" rx="8" fill="#576173"/>
+  <text x="588" y="561" fill="#1A444B" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700">system #19</text>
+  <text x="588" y="593" fill="#4D6A70" font-family="Segoe UI, Arial, sans-serif" font-size="17">Risk classification: CONFIG_UPDATE requires approval.</text>
+
+  <rect x="560" y="670" width="890" height="60" rx="14" fill="#F1E6D3" stroke="#CFBFA4"/>
+  <text x="588" y="707" fill="#2F535A" font-family="Segoe UI, Arial, sans-serif" font-size="16">Page 2 / 8 • Showing 9-16 of 61 • Prev / Next</text>
+
+  <text x="110" y="835" fill="#4B676E" font-family="Segoe UI, Arial, sans-serif" font-size="20">Fast scanning for large sessions with readable cards and clear role markers.</text>
+</svg>
+
