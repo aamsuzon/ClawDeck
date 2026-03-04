@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# clawdeck private strategy files
+.private/
+docs/internal/
+*PRIVATE*
+*STRATEGY*
+*GTM*
